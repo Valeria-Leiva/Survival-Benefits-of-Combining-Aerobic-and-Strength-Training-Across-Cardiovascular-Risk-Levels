@@ -111,7 +111,7 @@ for(i in 1:nrow(mymetada)){
 int.obs <- rowSums(int.obs)
 
 # X: design matrix
-X <- model.matrix(~BMI + AGE+ TRIG +abnEcg +FS_cat_new * SportCat, 
+X <- model.matrix(~0+BMI + AGE+ TRIG +abnEcg +FS_cat_new * SportCat, 
                   data = mymetada)
 dim(X)
 
